@@ -6,7 +6,7 @@ import os
 load_dotenv()
 
 
-# Connect to mysql database
+# Connect to mysql database using environment variables
 def get_connection():
     return mysql.connector.connect(
         host=os.getenv("DB_HOST"),
@@ -33,14 +33,14 @@ def create_table(cursor):
         )
     """)
 
-
+# Loads data into MySQL database
 def load_data(df):
     conn = get_connection()
     cursor = conn.cursor()
 
     create_table(cursor)
 
-    # SQL insert query with IGNORE to avoid duplicates based on unique_id
+    # SQL insert query with IGNORE to avoid duplicates
     insert_query = """
         INSERT IGNORE INTO weather_data
         (time, temperature, precipitation, city, unique_id)
