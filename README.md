@@ -54,6 +54,9 @@ DB_PORT=3306
 4. Run the pipline:
 ``` python scripts/pipeline_weather.py ```
 
+## Pipeline diagram
+![Weather Pipeline Diagram](/assets/pipeline_diagram.png)
+
 ### Future Improvements
 - Schedule pipeline runs (Airflow)
 - Store data in cloud platforms (AWS S3 / Redshift)
