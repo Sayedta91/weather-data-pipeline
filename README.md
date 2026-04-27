@@ -1,7 +1,7 @@
 # Weather Data Pipeline (ETL)
 
-A modular end-to-end data pipeline that ingests real-time weather data from an external API, processes it, and stores it in a structured MySQL database.
-Designed to demonstrate core data engineering and data architecture concepts, including ETL pipelines, data validation, and reliable data loading.
+Built a simple end-to-end data pipeline that pulls real-time weather data from an API, processes it, and stores it in a MySQL database. 
+The project focuses on core data engineering concepts like ETL design, data validation, and reliable data loading.
 
 ### What this project shows
 - Building a modular ETL pipeline
